@@ -1,0 +1,7 @@
+.*
+tsconfig.json
+node_modules/
+release/**/*.tsbuildinfo
+release/**/*.map
+scripts/
+source/

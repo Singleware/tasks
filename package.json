@@ -1,0 +1,38 @@
+{
+  "author": {
+    "name": "Silas B. Domingos",
+    "email": "hello@balmante.eti.br",
+    "url": "https://balmante.eti.br"
+  },
+  "name": "@singleware/tasks",
+  "description": "Singleware tasks package.",
+  "license": "MIT",
+  "version": "0.0.1-alpha",
+  "main": "release/index.js",
+  "types": "typing/index.d.ts",
+  "keywords": [
+    "Tasks",
+    "Task scheduler"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/singleware/tasks"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.3"
+  },
+  "prettier": {
+    "printWidth": 130,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "semi": true
+  },
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./release && rm -rf ./typing",
+    "compile": "tsc --build tsconfig.json"
+  }
+}
